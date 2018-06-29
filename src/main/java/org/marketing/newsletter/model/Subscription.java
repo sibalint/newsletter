@@ -4,7 +4,7 @@ public class Subscription {
 	
 	private String fullName;
 	
-	private String emailAdress;
+	private String emailAdress; 
 
 	public String getFullName() {
 		return fullName;
