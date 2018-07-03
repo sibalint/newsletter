@@ -21,6 +21,11 @@ public class Subscription {
 	public void setEmailAdress(String emailAdress) {
 		this.emailAdress = emailAdress;
 	}
+
+	@Override
+	public String toString() {
+		return "Subscription [fullName=" + fullName + ", emailAdress=" + emailAdress + "]";
+	}
 	
 	
 }
