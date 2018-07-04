@@ -6,6 +6,15 @@ public class Subscription {
 	
 	private String emailAdress; 
 
+	public Subscription () {
+		
+	}
+	
+	public Subscription(String fullName, String emailAdress) {
+		this.fullName = fullName;
+		this.emailAdress = emailAdress;
+	}
+
 	public String getFullName() {
 		return fullName;
 	}
