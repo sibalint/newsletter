@@ -8,6 +8,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.util.Assert;
 
 @Service
 public class SumscriptionServiceImpl implements SubscriptionService {
@@ -19,6 +20,8 @@ public class SumscriptionServiceImpl implements SubscriptionService {
 	
 	@Override
 	public void register(Subscription subscription) throws SubscriptionAlreadyExistsException {
+		Assert.notNull(subscription, "subscription must not be null");
+		
 		log.info("Registring subscription: {}", subscription);
 		
 		try {

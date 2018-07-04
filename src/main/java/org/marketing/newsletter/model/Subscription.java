@@ -1,9 +1,17 @@
 package org.marketing.newsletter.model;
 
+import javax.validation.constraints.Email;
+import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.Size;
+
 public class Subscription {
 	
+	@NotBlank //ellenörzi, h ki van e töltve a mező
+	@Size(min = 3, max = 30) //söveg méret korlátozás 3-30 karakter hosszú
 	private String fullName;
 	
+	@NotBlank
+	@Email //elamil formátum
 	private String emailAdress; 
 
 	public Subscription () {
