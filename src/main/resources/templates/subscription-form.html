@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <title th:text="#{app.title}">Newsletter Subscription</title>
-    <link rel="stylesheet" type="text/css" href="/css/subscription.css" />
+    <link rel="stylesheet" type="text/css" th:href="@{/css/subscription.css}" href="../static/css/subscription.css" />
 </head>
 <body>
 
-<form method="post" action="/subscribe">
+<form method="post" th:action="@{/subscribe}" action="/subscribe">
     <h1 th:text="#{subscriptionForm.heading1}">Sign up for our newsletter</h1>
     <h2 th:text="#{subscriptionForm.heading2}">get instant updates on hot product and special deals</h2>
 
