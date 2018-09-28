@@ -11,6 +11,13 @@
     <h1>Dear Client,</h1>
     <h2>Thank you for your subscription!</h2>
     It is a pleasure to have you in our <span th:text="${numberOfNewslettersSubscription}"/> newsletter subscribers!
+
+    <h3>Please see our latest highlights:</h3>
+
+    <ul th:each="newsletters : ${newsletterHighlights}">
+        <li th:text="${newsletters.subject}" />
+    </ul>
+
 </div>
 
 </body>
