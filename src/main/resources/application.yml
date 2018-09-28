@@ -1,0 +1,12 @@
+subsctiption:
+  numberOfNewsletterSubscriptions: 500
+
+
+communication:
+  recentNewsletters:
+    -
+      subject: Extreme price-cut! 50% OFF!
+      content: Get the most value of your money!
+    -
+     subject: New store in W-London!
+     content: Nomore trvels to get to your favorite place to shop!
